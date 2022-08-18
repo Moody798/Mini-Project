@@ -62,6 +62,7 @@ li {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
+  padding: 32px;
 }
 #about {
   padding: 48px 0;
@@ -100,37 +101,89 @@ img {
   background-color: #cefeff;
   padding: 48px 0;
 }
-#contact{
-    background-color:#dce9ff;
-    padding: 48px 0;
+#contact {
+  background-color: #dce9ff;
+  padding: 48px 0;
 }
-form{
-width: 100%;
-max-width: 600px;
-display: flex;
-flex-direction: column;
-margin: 0 auto;
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-input,textarea{
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+}
+footer {
+  background-color: #aaf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+}
+.footer__logo {
+  max-width: 480px;
+  margin-bottom: 16px;
+}
+.footer__links {
+  margin-bottom: 32px;
+}
+.footer__link {
+  padding: 0 16px;
+}
+/*small phones, tablets,large smartphones*/
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+  .home__description {
     margin-bottom: 24px;
-    font-size: 20px;
-    padding: 6px 12px;
-}
-footer{
-    background-color: #aaf5ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 0;
-
-}
-.footer__logo{
-    max-width: 480px;
-    margin-bottom: 16px;
-}
-.footer__links{
-margin-bottom: 32px;
-}
-.footer__link{
-    padding: 0 16px;
+  }
+  .home__description__button{
+    max-width: 240px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .row p {
+    text-align: center;
+    font-size: 24px;
+  }
+  ul{
+    display: none;
+  }
+  .section__description{
+    flex-direction: column;
+  }
+  .section__description__wrapper{
+    width: 100%;
+  }
+  .about__img__Wrapper{
+    width: 100%;
+  }
+  #discord .section__description{
+    flex-direction: column-reverse;
+  }
+  footer{
+    padding: 48px 24px;
+  }
+  .footer__logo{
+    max-width: 360px;
+  }
+  .footer__link{
+    padding: 0 4px;
+    font-size: 18px;
+  }
+  .footer__links{
+    margin-bottom: 24px;
+  }
 }
